@@ -4,7 +4,7 @@
     class="carousel-slide"
     :src="
       dressedImage
-        ? `https://dashboard.wears.com.tr/img/${dressedImage}`
+        ? `https://dashboard.wears.com.tr/dressedImageSW/${dressedImage}`
         : getImgUrl(image)
     "
     alt="Product image"
@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getImgUrl(pic) {
-      return require(`../../assets/images/${pic}`);
+      return `https://dashboard.wears.com.tr/imagesSW/${pic}`;
     },
   },
   setup() {

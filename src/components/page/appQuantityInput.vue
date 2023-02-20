@@ -30,7 +30,7 @@ export default {
   emits: ['addQuantity', 'removeQuantity'],
   methods: {
     getImgUrl(pic) {
-      return require(`../../assets/images/${pic}`);
+      return `https://dashboard.wears.com.tr/imagesSW/${pic}`;
     },
   },
 };

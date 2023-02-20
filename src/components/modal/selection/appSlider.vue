@@ -16,7 +16,10 @@
       @slideChange="onSlideChange"
     >
       <swiper-slide v-for="(model, index) in models" :key="index">
-        <img class="model-image" :src="getImgUrl(model.img)" />
+        <img
+          class="model-image"
+          :src="`https://dashboard.wears.com.tr/modelSW/${model.img}`"
+        />
       </swiper-slide>
     </swiper>
     <i class="next-btn fa fa-angle-right fa-3x" @click="handleSlideNext"></i>
@@ -65,9 +68,6 @@ export default {
     },
     handleSlidePrev() {
       this.swiper.slidePrev();
-    },
-    getImgUrl(pic) {
-      return require(`../../../assets/models/${pic}`);
     },
   },
 

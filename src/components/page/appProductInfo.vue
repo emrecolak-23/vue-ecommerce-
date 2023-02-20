@@ -84,7 +84,7 @@ export default {
       this.quantity = 0;
     },
     getImgUrl(pic) {
-      return require(`../../assets/images/${pic}`);
+      return `https://dashboard.wears.com.tr/imagesSW/${pic}`;
     },
   },
 };

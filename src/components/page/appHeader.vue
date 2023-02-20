@@ -103,7 +103,7 @@ export default {
       this.visibleMenu = false;
     },
     getImgUrl(pic) {
-      return require(`../../assets/images/${pic}`);
+      return `https://dashboard.wears.com.tr/imagesSW/${pic}`;
     },
   },
 };

@@ -89,7 +89,7 @@ export default {
       this.visibleIndex = previewIndex;
     },
     getImgUrl(pic) {
-      return require(`../../../assets/images/${pic}`);
+      return `https://dashboard.wears.com.tr/imagesSW/${pic}`;
     },
   },
 };
