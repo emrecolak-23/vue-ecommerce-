@@ -2,7 +2,11 @@
   <img
     v-show="visibleIndex === index"
     class="carousel-slide"
-    :src="dressedImage ? getDressedImgUrl(dressedImage) : getImgUrl(image)"
+    :src="
+      dressedImage
+        ? `https://dashboard.wears.com.tr/img/${dressedImage}`
+        : getImgUrl(image)
+    "
     alt="Product image"
   />
 </template>
@@ -34,9 +38,6 @@ export default {
   methods: {
     getImgUrl(pic) {
       return require(`../../assets/images/${pic}`);
-    },
-    getDressedImgUrl(pic) {
-      return require(`../../assets/dressed/${pic}`);
     },
   },
   setup() {
