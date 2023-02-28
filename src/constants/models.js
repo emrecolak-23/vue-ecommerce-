@@ -103,7 +103,7 @@ export default {
     {
       name: 'Lona',
       height: {
-        min: 167,
+        min: 165,
         max: 173,
       },
       img: 'model_14.png',

@@ -1,21 +1,23 @@
 <template>
-  <div class="row ms-1">
-    <a
-      data-bs-toggle="modal"
-      data-bs-target="#modalView"
-      href="#"
-      class="btn-modal"
-    >
-      <span class="btn-text">Try on</span>
-    </a>
+  <div>
+    <div class="row ms-1">
+      <a
+        data-bs-toggle="modal"
+        data-bs-target="#modalView"
+        href="#"
+        class="btn-modal"
+      >
+        <span class="btn-text">Find My Model</span>
+      </a>
+    </div>
+    <app-modal>
+      <app-title />
+      <app-entrance v-if="sectionNo == 1" />
+      <app-measurement v-if="sectionNo == 2" />
+      <app-model v-if="sectionNo == 3" />
+      <app-footer />
+    </app-modal>
   </div>
-  <app-modal>
-    <app-title />
-    <app-entrance v-if="sectionNo == 1" />
-    <app-measurement v-if="sectionNo == 2" />
-    <app-model v-if="sectionNo == 3" />
-    <app-footer />
-  </app-modal>
 </template>
 
 <script>
