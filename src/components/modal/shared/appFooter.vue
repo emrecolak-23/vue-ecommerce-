@@ -3,22 +3,16 @@
     <div class="d-flex justify-content-between align-items-center">
       <div class="logo-group">
         powered by
-        <img class="company-logo" :src="getImgUrl('wears.png')" alt="" />
+        <img
+          class="company-logo"
+          src="https://wearsv1.northeurope.cloudapp.azure.com:5000/images/wears.png"
+          alt=""
+        />
       </div>
       <div class="company-signature">© Wear’s All Rights Reserved</div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    getImgUrl(pic) {
-      return require(`../../../assets/${pic}`);
-    },
-  },
-};
-</script>
 
 <style scoped>
 .logo-group {
