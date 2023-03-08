@@ -85,7 +85,7 @@ export default {
   ],
   M: [
     {
-      name: 'Kylie',
+      name: 'Daisy',
       height: {
         min: 153,
         max: 160,
